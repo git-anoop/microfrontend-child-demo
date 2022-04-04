@@ -8,16 +8,15 @@ import {SampleComponent} from './sample/sample.component';
 
 const local = true;
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    SampleModule
-  ],
-  providers: [],
-  entryComponents: [SampleComponent],
-  bootstrap: [local ? AppComponent : []]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        SampleModule
+    ],
+    providers: [],
+    bootstrap: [local ? AppComponent : []]
 })
 export class AppModule implements DoBootstrap {
   constructor(private injector: Injector) {
