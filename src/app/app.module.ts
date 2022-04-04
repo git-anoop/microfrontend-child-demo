@@ -6,7 +6,7 @@ import {SampleModule} from './sample/sample.module';
 import {createCustomElement} from '@angular/elements';
 import {SampleComponent} from './sample/sample.component';
 
-const local = false;
+const local = true;
 @NgModule({
   declarations: [
     AppComponent
